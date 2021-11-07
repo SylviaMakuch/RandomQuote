@@ -1,13 +1,25 @@
 import React from "react";
+import MainBox from "./components/Mainbox";
 import styled from "styled-components";
-import Qoutation from "./components/Mainbox";
-import AppLayout from "./components/AppLayout";
+
+const AppLayoutContainer = styled.img`
+    min-height: 100%;
+    background-color: black;
+    
+
+    @media screen and (max-width: 2000px) {
+        padding: 40px 5%;
+    }    
+    @media screen and (max-width: 600px) {
+        padding: 20px 5%;
+    }      
+`;
 
 function App() {
     return (
-        <AppLayout>
-            <Qoutation />
-        </AppLayout>
-
+        <AppLayoutContainer>
+            <MainBox />
+        </AppLayoutContainer>
     )
 }
+export default App;
