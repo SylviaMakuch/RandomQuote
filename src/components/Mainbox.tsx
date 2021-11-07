@@ -3,38 +3,43 @@ import styled from 'styled-components';
 import Quote from './Quote';
 
 const MainContainer = styled.div`
-    max-width: 50em;
-    padding: 1rem;
+    display: flex;
+    height: 60vh;
+    max-width: 60em;
     background: linear-gradient(to left, #ff00d9, #08fffb);
     padding: 3px;
-    
+    margin: 10%;
+        @media screen and (max-width: 840px) {
+            height: 30%;
+        }
 `;
 const InnerContainer = styled.div`
     background: #000000;
     color: #ffffff;
-    padding: 4em;
+    padding: 3em;
     margin: 0.5%;
 `;
 
 const Header = styled.div`
-    font-family: 'Lora', serif;;
-    font-size: 90px;
-    line-height: 2.0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 80px;
     letter-spacing: 2.0;
-    padding:50px 0px;
+    padding: 20px 0px;
     text-align: center;
-    @media screen and (max-width: 1150px) {
-        font-size: 50px;
+
+    @media screen and (max-width: 600px) {
+        font-size: 40px ;
         text-align: center;
     }
 `;
 
 export default function MainBox() {
-    return(
+    return (
         <MainContainer>
             <InnerContainer>
-            <Header> The API says...</Header>
-            <Quote />
+                <Header> The API says...</Header>
+                <Quote />
             </InnerContainer>
         </MainContainer>
     )

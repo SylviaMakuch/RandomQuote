@@ -1,46 +1,28 @@
 import React from "react";
-import { useState } from 'react';
-import { useEffect } from 'react';
+import styled from "styled-components";
+import QuoteLogic from "./QuoteLogic";
 
-function Quote() {
-    const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [quotes, setQuotes] = useState([]);
+const QuoteBox = styled.div`
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+    padding: 30px 0px;
+    text-align: center;
 
-    const fetchQuote = () => {
-        fetch("https://quotes.rest/qod")
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    console.log(result);
-                    setIsLoaded(true);
-                    setQuotes(result.contents.quotes);
-                },
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
-                }
-            )
-    }
+    @media screen and (max-width: 690px) {
+        padding: 10%;
+        font-size: 95%;
+        letter-spacing: 2.0;
+        line-height: 2.0;
+       
+    `
 
-    useEffect(() => {
-        fetchQuote()
-    }, [])
-
-    if (error) {
-        return <div>Error</div>;
-    } else if (!isLoaded) {
-        return <div>Loading...</div>;
-    } else {
-        return (
-            <>
-                {
-                    quotes.map((quote: any, index) => {
-                        return <div key={index}>{quote.quote}</div>
-                    })
-                }
-            </>
-        );
-    }
-}
-export default Quote;
+export default function Qoute() {
+    return(
+        <QuoteBox>
+        <QuoteLogic />
+        </QuoteBox>
+    )
+};
