@@ -9,6 +9,7 @@ const MainContainer = styled.div`
     background: linear-gradient(to left, #ff00d9, #08fffb);
     padding: 3px;
     margin: 10%;
+    display: grid;
         @media screen and (max-width: 840px) {
             height: 30%;
         }

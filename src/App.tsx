@@ -7,7 +7,6 @@ const AppLayoutContainer = styled.div`
     display: contents;
 
     @media screen and (max-width: 2000px) {
-        padding: 40px 5%;
         align-content: center;
     }    
     @media screen and (max-width: 600px) {
