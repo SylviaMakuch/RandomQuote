@@ -5,7 +5,6 @@ import Quote from './Quote';
 const MainContainer = styled.div`
     display: flex;
     height: 60vh;
-    max-width: 60em;
     background: linear-gradient(to left, #ff00d9, #08fffb);
     padding: 3px;
     margin: 10%;
