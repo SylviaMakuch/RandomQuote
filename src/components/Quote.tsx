@@ -15,7 +15,7 @@ const QuoteBox = styled.div`
             padding: 10%;
         }
         @media screen and (min-width: 690px) {
-            font-size: 35px;
+            font-size: 40px;
             letter-spacing: 1.0;
             line-height: 2.0;
         }
