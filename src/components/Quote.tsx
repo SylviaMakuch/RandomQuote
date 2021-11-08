@@ -16,9 +16,8 @@ const QuoteBox = styled.div`
         font-size: 95%;
         letter-spacing: 2.0;
         line-height: 2.0;
-       
+    }
     `
-
 export default function Qoute() {
     return(
         <QuoteBox>
