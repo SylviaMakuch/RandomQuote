@@ -38,7 +38,7 @@ export default function MainBox() {
     return (
         <MainContainer>
             <InnerContainer>
-                <Header> The API says...</Header>
+                <Header> Daily Quote</Header>
                 <Quote />
             </InnerContainer>
         </MainContainer>
