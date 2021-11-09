@@ -5,19 +5,14 @@ import QuoteLogic from "./QuoteLogic";
 const QuoteBox = styled.div`
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.5;
     letter-spacing: 1.5;
     padding: 30px 0px;
     text-align: center;
-
-        @media screen and (max-width: 690px) {
+        @media(max-width: 690px) {
             padding: 10%;
-        }
-        @media screen and (min-width: 690px) {
             font-size: 40px;
-            letter-spacing: 1.0;
-            line-height: 2.0;
         }
     `
     
