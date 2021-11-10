@@ -9,6 +9,7 @@ const MainContainer = styled.div`
     padding: 3px;
     margin: 10%;
     display: grid;
+    align-content: center;
         @media screen and (max-width: 840px) {
             height: 30%;
         }
