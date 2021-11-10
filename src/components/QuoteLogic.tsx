@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from 'react';
 import { useEffect } from 'react';
 import styled from "styled-components";
-import loading from './loading.svg';
+import loading from "./loading.svg";
 
 const QuoteBox = styled.div`
     font-family: 'Lato', sans-serif;
@@ -12,13 +12,18 @@ const QuoteBox = styled.div`
     letter-spacing: 1.5;
     padding: 30px 0px;
     text-align: center;
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 675px) {
             font-family: 'Lato', sans-serif;
             padding: 10%;
-            font-size: 30px;
+            font-size: 95%;
             line-height: 2.0;
         } 
-    `
+`
+
+const Diver =styled.div`
+    display:flex;
+    justify-content: center;
+`
 
 const AuthorName =styled.p`
     font-family: 'Lato', sans-serif;
@@ -29,11 +34,14 @@ const AuthorName =styled.p`
     padding: 15px 0px;
     text-align: center;
     font-style: italic;
+    @media screen and (max-width: 675px) {
+            font-family: 'Lato', sans-serif;
+            padding: 10%;
+            font-size: 90%;
+            line-height: 2.0;
+        } 
 `
-const Diver =styled.div`
-    display:flex;
-    justify-content: center;
-    `
+
 
 function QuoteLogic() {
     const [error, setError] = useState(null);
@@ -66,7 +74,6 @@ function QuoteLogic() {
         return <Diver><img src={loading} alt='Loading...'/> </Diver>;
     } else {
         return (
-            
             <>
                 {
                     quotes.map((quote: any, index) => {

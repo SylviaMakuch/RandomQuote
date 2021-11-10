@@ -9,30 +9,41 @@ const MainContainer = styled.div`
     padding: 3px;
     margin: 10%;
     display: grid;
-    align-content: center;
-        @media screen and (max-width: 840px) {
-            height: 30%;
+        @media screen and (min-height: 940px) {
+            height: 40%;
         }
 `;
 const InnerContainer = styled.div`
     background: #000000;
     color: #ffffff;
-    padding: 3em;
+    padding: 4vh;
     margin: 0.5%;
+    @media screen and (max-width: 500px) {
+        padding: 15%;
+    }
 `;
 
 const Header = styled.div`
     font-family: 'Playfair Display', serif;
-    font-weight: 800;
-    font-size: 80px;
+    font-weight: 800;   
+    font-size: 8.5vh;
     letter-spacing: 2.0;
     padding: 20px 0px;
     text-align: center;
 
+    @media screen and (min-height: 940px) {
+            font-size: 270% ;
+        }
+    
     @media screen and (max-width: 600px) {
-        font-size: 40px ;
+        font-size: 260% ;
+        text-align: center;
+
+    @media screen and (max-width: 300px) {
+        font-size: 225% ;
         text-align: center;
     }
+
 `;
 
 export default function MainBox() {
