@@ -10,7 +10,7 @@ const MainContainer = styled.div`
     margin: 10%;
     display: grid;
         @media screen and (min-height: 940px) {
-            height: 40%;
+            height: 95%;
         }
 `;
 const InnerContainer = styled.div`
@@ -19,7 +19,7 @@ const InnerContainer = styled.div`
     padding: 4vh;
     margin: 0.5%;
     @media screen and (max-width: 500px) {
-        padding: 15%;
+        padding: 8%;
     }
 `;
 
@@ -32,12 +32,11 @@ const Header = styled.div`
     text-align: center;
 
     @media screen and (min-height: 940px) {
-            font-size: 270% ;
-        }
-    
+            font-size: 300% ;
+        }           
     @media screen and (max-width: 600px) {
-        font-size: 260% ;
-        text-align: center;
+        font-size: 290% ;
+    }
 
     @media screen and (max-width: 300px) {
         font-size: 225% ;

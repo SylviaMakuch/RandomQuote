@@ -7,17 +7,25 @@ import loading from "./loading.svg";
 const QuoteBox = styled.div`
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    font-size: 25px;
+    font-size: 3.5vh;
     line-height: 1.5;
     letter-spacing: 1.5;
     padding: 30px 0px;
     text-align: center;
-        @media screen and (max-width: 675px) {
-            font-family: 'Lato', sans-serif;
-            padding: 10%;
-            font-size: 95%;
-            line-height: 2.0;
-        } 
+       
+    @media screen and (min-height: 940px) {
+            font-size: 200% ;
+        }
+    
+    @media screen and (max-width: 700px) {
+        font-size: 150% ;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 300px) {
+        font-size: 100% ;
+        text-align: center;
+    }
 `
 
 const Diver =styled.div`
