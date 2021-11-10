@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Quote from './Quote';
+import QuoteLogic from './QuoteLogic';
 
 const MainContainer = styled.div`
     display: flex;
@@ -39,7 +39,7 @@ export default function MainBox() {
         <MainContainer>
             <InnerContainer>
                 <Header> Daily Quote</Header>
-                <Quote />
+                <QuoteLogic />
             </InnerContainer>
         </MainContainer>
     )

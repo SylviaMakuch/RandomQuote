@@ -1,6 +1,34 @@
 import React from "react";
 import { useState } from 'react';
 import { useEffect } from 'react';
+import styled from "styled-components";
+
+const QuoteBox = styled.div`
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+    padding: 30px 0px;
+    text-align: center;
+        @media screen and (max-width: 900px) {
+            font-family: 'Lato', sans-serif;
+            padding: 10%;
+            font-size: 90px;
+            line-height: 2.0;
+        } 
+    `
+
+const AuthorName =styled.p`
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+    padding: 15px 0px;
+    text-align: center;
+    font-style: italic;
+`
 
 function QuoteLogic() {
     const [error, setError] = useState(null);
@@ -36,11 +64,13 @@ function QuoteLogic() {
             <>
                 {
                     quotes.map((quote: any, index) => {
-                        return <div key={index}>{quote.quote}</div>
+                        return <QuoteBox key={index}>{quote.quote} 
+                        <AuthorName className="author_name">~ {quote.author}</AuthorName>
+                        </QuoteBox>
                     })
                 }
             </>
         );
     }
-}
+}   
 export default QuoteLogic;
