@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,KACE,kEAA6C,CAC7C,qBACF,CAAA","file":"main.97b9a732.chunk.css","sourcesContent":["body {\n  background-image: url(./components/stars.svg);\n  background-color: black;\n}; \n"]}
