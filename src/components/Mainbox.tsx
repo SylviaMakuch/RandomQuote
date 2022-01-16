@@ -13,11 +13,17 @@ const MainContainer = styled.div`
     align-items: center;
     margin: 10%;
 `;
+
 const InnerContainer = styled.div`
     background: #000000;
     height: 80%;
     color: #ffffff;
     padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 `;
 
 const Header = styled.div`
