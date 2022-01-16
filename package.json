@@ -1,6 +1,6 @@
 {
-  "homepage": "http://sylviamakuch.github.io/randomquote", 
-  "name": "randomquote",
+  "homepage": "https://sylviamakuch.github.io/RandomQuote/", 
+  "name": "RandomQuote",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
