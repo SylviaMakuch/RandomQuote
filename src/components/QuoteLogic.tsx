@@ -79,13 +79,14 @@ function QuoteLogic() {
         return <Diver><img src={loading} alt='Loading...' /> </Diver>;
     } else {
         return (
-            <div>             {
-                quotes.map((quote: any, index) => {
-                    return <QuoteBox key={index}>{quote.quote}
-                        <AuthorName className="author_name">~ {quote.author}</AuthorName>
-                    </QuoteBox>
-                })
-            }
+            <div>
+                {
+                    quotes.map((quote: any, index) => {
+                        return <QuoteBox key={index}>{quote.quote}
+                            <AuthorName className="author_name">~ {quote.author}</AuthorName>
+                        </QuoteBox>
+                    })
+                }
             </div>
         );
     }

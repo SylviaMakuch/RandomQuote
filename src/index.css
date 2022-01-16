@@ -1,4 +1,9 @@
 body {
   background-image: url(./components/stars.svg);
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 1000px;
 }; 

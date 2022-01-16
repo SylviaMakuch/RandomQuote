@@ -3,19 +3,21 @@ import styled from 'styled-components';
 import QuoteLogic from './QuoteLogic';
 
 const MainContainer = styled.div`
+    height: 800px;
+    width: 80%
     display: flex;
     background: linear-gradient(to left, #ff00d9, #08fffb);
     padding: 3px;
-    /* margin: 10%; */
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
 `;
 const InnerContainer = styled.div`
     background: #000000;
+    height: 80%;
     color: #ffffff;
-    padding: 75px;
-    margin: 10px;
-    @media screen and (max-width: 500px) {
-        padding: 8%;
-    }
+    padding: 80px;
 `;
 
 const Header = styled.div`

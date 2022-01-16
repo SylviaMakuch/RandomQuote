@@ -3,8 +3,6 @@ import MainBox from "./components/Mainbox";
 import styled from "styled-components";
 
 const AppLayoutContainer = styled.div`
-    background-color: black;
-   
 `;
 
 function App() {
