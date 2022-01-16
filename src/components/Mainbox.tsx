@@ -4,7 +4,7 @@ import QuoteLogic from './QuoteLogic';
 
 const MainContainer = styled.div`
     display: flex;
-    height: 60vh;
+    height: 1000px;
     background: linear-gradient(to left, #ff00d9, #08fffb);
     padding: 3px;
     margin: 10%;
@@ -16,7 +16,7 @@ const MainContainer = styled.div`
 const InnerContainer = styled.div`
     background: #000000;
     color: #ffffff;
-    padding: 4vh;
+    padding: 75px;
     margin: 0.5%;
     @media screen and (max-width: 500px) {
         padding: 8%;
@@ -26,7 +26,6 @@ const InnerContainer = styled.div`
 const Header = styled.div`
     font-family: 'Playfair Display', serif;
     font-weight: 800;   
-    font-size: 8.5vh;
     letter-spacing: 2.0;
     padding: 20px 0px;
     text-align: center;

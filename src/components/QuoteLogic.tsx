@@ -7,7 +7,7 @@ import loading from "./loading.svg";
 const QuoteBox = styled.div`
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    font-size: 3.5vh;
+    font-size: 60px;
     line-height: 1.5;
     letter-spacing: 1.5;
     padding: 30px 0px;
@@ -26,12 +26,12 @@ const QuoteBox = styled.div`
         font-size: 100% ;
         text-align: center;
     }
-`
+`;
 
 const Diver = styled.div`
     display:flex;
     justify-content: center;
-`
+`;
 
 const AuthorName = styled.p`
     font-family: 'Lato', sans-serif;
@@ -48,8 +48,7 @@ const AuthorName = styled.p`
             font-size: 90%;
             line-height: 2.0;
         } 
-`
-
+`;
 
 function QuoteLogic() {
     const [error, setError] = useState(null);
