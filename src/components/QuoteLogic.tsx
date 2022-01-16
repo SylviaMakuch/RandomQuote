@@ -28,12 +28,12 @@ const QuoteBox = styled.div`
     }
 `
 
-const Diver =styled.div`
+const Diver = styled.div`
     display:flex;
     justify-content: center;
 `
 
-const AuthorName =styled.p`
+const AuthorName = styled.p`
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: 20px;
@@ -79,19 +79,18 @@ function QuoteLogic() {
     if (error) {
         return <div>Error</div>;
     } else if (!isLoaded) {
-        return <Diver><img src={loading} alt='Loading...'/> </Diver>;
+        return <Diver><img src={loading} alt='Loading...' /> </Diver>;
     } else {
         return (
-            <>
-                {
-                    quotes.map((quote: any, index) => {
-                        return <QuoteBox key={index}>{quote.quote} 
+            <div>             {
+                quotes.map((quote: any, index) => {
+                    return <QuoteBox key={index}>{quote.quote}
                         <AuthorName className="author_name">~ {quote.author}</AuthorName>
-                        </QuoteBox>
-                    })
-                }
-            </>
+                    </QuoteBox>
+                })
+            }
+            </div>
         );
     }
-}   
+}
 export default QuoteLogic;
