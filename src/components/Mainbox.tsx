@@ -4,20 +4,15 @@ import QuoteLogic from './QuoteLogic';
 
 const MainContainer = styled.div`
     display: flex;
-    height: 1000px;
     background: linear-gradient(to left, #ff00d9, #08fffb);
     padding: 3px;
-    margin: 10%;
-    display: grid;
-        @media screen and (min-height: 940px) {
-            height: 95%;
-        }
+    /* margin: 10%; */
 `;
 const InnerContainer = styled.div`
     background: #000000;
     color: #ffffff;
     padding: 75px;
-    margin: 0.5%;
+    margin: 10px;
     @media screen and (max-width: 500px) {
         padding: 8%;
     }
@@ -29,19 +24,7 @@ const Header = styled.div`
     letter-spacing: 2.0;
     padding: 20px 0px;
     text-align: center;
-
-    @media screen and (min-height: 940px) {
-            font-size: 300% ;
-        }           
-    @media screen and (max-width: 600px) {
-        font-size: 290% ;
-    }
-
-    @media screen and (max-width: 300px) {
-        font-size: 225% ;
-        text-align: center;
-    }
-
+    font-size: 60px;
 `;
 
 export default function MainBox() {

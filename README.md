@@ -1,2 +1,2 @@
-Web friendly Quote of the day generator!
+Web friendly Quote of the Day generator!
 Hope you enjoy 

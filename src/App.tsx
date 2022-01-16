@@ -4,14 +4,7 @@ import styled from "styled-components";
 
 const AppLayoutContainer = styled.div`
     background-color: black;
-    display: contents;
-
-    @media screen and (max-width: 2000px) {
-        align-content: center;
-    }    
-    @media screen and (max-width: 600px) {
-        padding: 20px 5%;
-    }      
+   
 `;
 
 function App() {

@@ -15,14 +15,12 @@ const QuoteBox = styled.div`
        
     @media screen and (min-height: 940px) {
             font-size: 200% ;
-        }
-    
+    }
     @media screen and (max-width: 700px) {
         font-size: 150% ;
         text-align: center;
     }
-
-    @media screen and (max-width: 300px) {
+    @media (max-width: 300px) {
         font-size: 100% ;
         text-align: center;
     }
