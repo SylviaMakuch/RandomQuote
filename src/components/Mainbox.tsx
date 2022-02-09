@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import QuoteLogic from './QuoteLogic';
 
 const MainContainer = styled.div`
-    /* height: 800px; */
     width: 80%
     display: flex;
     background: linear-gradient(to left, #ff00d9, #08fffb);
